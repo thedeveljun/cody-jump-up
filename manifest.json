@@ -1,0 +1,26 @@
+{
+  "name": "점프UP 코디",
+  "short_name": "코디앱",
+  "description": "코웨이 코디 개인 실적 관리",
+  "start_url": "/cody-jump-up/",
+  "scope": "/cody-jump-up/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F57F00",
+  "theme_color": "#F57F00",
+  "id": "cody-jump-up-v1",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
