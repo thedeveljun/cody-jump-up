@@ -107,11 +107,6 @@ html,body{height:100%;overflow-x:hidden;}
     <input class="name-field" type="text" id="name-field" placeholder="이름 입력 후 저장" maxlength="10"/>
     <button class="btn-name-save" onclick="saveName()">저장</button>
   </div>
-  <div class="backup-bar">
-    <button class="btn-backup" onclick="backupData()">📤 데이터 백업</button>
-    <button class="btn-restore" onclick="document.getElementById('restore-file').click()">📥 데이터 복구</button>
-    <input type="file" id="restore-file" accept=".json" style="display:none" onchange="restoreData(this)"/>
-  </div>
   <div class="tab-bar">
     <div class="tab active" id="tab-sy" onclick="showTab('sy')">📋 생산율</div>
     <div class="tab" id="tab-369" onclick="showTab('369')">📊 3.6.9</div>
@@ -215,6 +210,14 @@ html,body{height:100%;overflow-x:hidden;}
       <div class="promo-note"><b>신규×1.0 + 재랜탈×0.5 + 자가재랜탈×1.0</b></div>
     </div>
   </div>
+
+  <!-- 백업/복구 — 최하단 -->
+  <div class="backup-bar">
+    <button class="btn-backup" onclick="backupData()">📤 데이터 백업</button>
+    <button class="btn-restore" onclick="document.getElementById('restore-file').click()">📥 데이터 복구</button>
+    <input type="file" id="restore-file" accept=".json" style="display:none" onchange="restoreData(this)"/>
+  </div>
+
 </div>
 <div class="toast" id="toast"></div>
 
